@@ -2,7 +2,7 @@
 Learning TypeScript Project
 
 
-Just a small project to help me lear TypeScript
+Just a small project to help me learn TypeScript
 
 Working example of integrating TypeScript with GulpJS
 
