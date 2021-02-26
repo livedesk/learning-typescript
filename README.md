@@ -16,3 +16,6 @@ gulp watch
 
 
 Don't forget to do npm install first :)
+
+
+Simon Barrett
