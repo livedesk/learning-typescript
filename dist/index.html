@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<title>Learning TS</title>	
+	<link rel="stylesheet" type="text/css" href="./styles/styles.min.css"/>
+
+</head>
+
+<body> 	
+	<h1>Learning TypeScript</h1>
+	<br/>
+	<label id="lblInfo"></label>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>	
+	<script data-main="./scripts/main" src="./scripts/require.js"></script>
+	<script type="text/javascript">
+
+		// async script loading
+		require(['main'], function () {
+             require(['Cat'], function (ns) {
+				onScriptsLoaded(ns);
+             }); 
+         });   
+		 
+	
+		 function onScriptsLoaded(ns){ 
+			 console.warn('scripts loaded');
+			var frisky = new ns.Cat('Frisky');
+			$('#lblInfo').text(frisky.speak());			
+		}
+
+		 $(function(){
+			
+		 });
+		
+	</script>
+
+</body>
+</html>
+
